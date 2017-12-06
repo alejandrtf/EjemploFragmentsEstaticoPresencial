@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeamDetailFragment">
+
+    <ImageView
+        android:id="@+id/ivEscudoDetailFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tvNombreEquipoDetailFragment"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/ic_launcher"
+        android:layout_toStartOf="@+id/tvNombreEquipoDetailFragment"
+        android:contentDescription="escudo" />
+
+    <TextView
+        android:id="@+id/tvNombreEquipoDetailFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:id="@+id/tvPuntosEquipoDetailFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvNombreEquipoDetailFragment"
+        android:layout_alignStart="@+id/tvNombreEquipoDetailFragment"
+        android:layout_below="@+id/tvNombreEquipoDetailFragment"
+        android:gravity="center_horizontal"
+        android:text="Puntos"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="italic" />
+</RelativeLayout>
